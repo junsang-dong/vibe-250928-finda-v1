@@ -97,14 +97,35 @@
 
 ```
 finda-app.html    # 모든 코드가 포함된 단일 HTML 파일
+index.html        # Netlify 배포용 메인 파일 (finda-app.html 복사본)
 README.md         # 프로젝트 문서
+_redirects        # Netlify 리다이렉트 설정
+netlify.toml      # Netlify 배포 설정
 ```
+
+## 🌐 Netlify 배포 설정
+
+### 자동 리다이렉트 설정
+- `_redirects` 파일: 모든 요청을 `finda-app.html`로 리다이렉트
+- `netlify.toml` 파일: Netlify 빌드 및 배포 설정
+- `index.html` 파일: Netlify 기본 진입점
+
+### 배포 후 확인사항
+1. 루트 URL (`https://your-site.netlify.app/`) 접속
+2. 자동으로 `finda-app.html`로 리다이렉트되는지 확인
+3. 모든 기능이 정상 작동하는지 테스트
 
 ## 🚀 실행 방법
 
-1. `finda-app.html` 파일을 웹 브라우저에서 열기
+### 로컬 실행
+1. `finda-app.html` 또는 `index.html` 파일을 웹 브라우저에서 열기
 2. 모바일 기기에서 최적의 경험을 위해 모바일 뷰로 실행
 3. 터치 제스처로 카드 스와이프 또는 버튼 클릭
+
+### Netlify 배포
+1. GitHub 저장소에 코드 푸시
+2. Netlify에서 저장소 연결
+3. 자동 배포 완료 후 `https://your-site-name.netlify.app` 접속
 
 ## 🔧 커스터마이징
 

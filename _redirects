@@ -1,0 +1,3 @@
+# Netlify redirects file
+# 모든 요청을 finda-app.html로 리다이렉트
+/*    /finda-app.html   200
